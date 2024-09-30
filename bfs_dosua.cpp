@@ -198,10 +198,6 @@ void print_WaysToGetGoal(Node* node){
 	}
 }
 
-
-
-
-
 int main(){
 	State cur_state ={10, 0, 0};
 	Node* p = BFS_Algorithm(cur_state);

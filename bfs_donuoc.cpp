@@ -33,9 +33,6 @@ void print_State(State state){
 	printf("\n	X:%d --- Y:%d", state.x, state.y);
 }
 
-
-
-
 int goalcheck(State state){
 	return (state.x == goal || state.y == goal);
 }
@@ -158,6 +155,7 @@ Node* BFS_Algorithm(State state){
 	}
 	return NULL;
 }
+
 void reverseQueue(queue<Node*>& Queue)
 {
     stack<Node*> Stack;
@@ -187,10 +185,6 @@ void print_WaysToGetGoal(Node* node){
 		no_action++;
 	}
 }
-
-
-
-
 
 int main(){
 	State cur_state ={0, 0};
