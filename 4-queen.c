@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#define N 4 // Kích thước bàn cờ (4x4)
+#define N 8 // Kích thước bàn cờ (4x4)
 
 // Cấu trúc lưu trạng thái của bàn cờ
 typedef struct {
@@ -18,7 +18,7 @@ typedef struct Node {
 
 // Cấu trúc hàng đợi
 typedef struct {
-    Node* elements[1000];
+    Node* elements[1000000];
     int front, rear;
 } Queue;
 
